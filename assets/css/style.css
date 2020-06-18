@@ -17,26 +17,28 @@ body {
 
 /*header and navigation*/
 header {
-    padding: 20px 35px;
+    padding: 18px 0px 10px 35px;
     background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header h1 {
     font-weight: normal;
     font-size: 34px;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-shadow: 0  0 10px rgba(0, 0, 0, 0.8);
 }
 
 header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 header nav {
@@ -54,14 +56,42 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 0px 10px 60px;
+    margin: 4px 20px;
+    padding: 6px 15px;
     font-weight: normal;
     font-size: 1.9vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 header nav ul li a:hover {
-    color: #f0d699;
-    font-size: 2.1vw;
-    text-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 68%);
+    font-size: 1.92vw;
+    border-radius: 15px;
+    text-shadow: 0 0 10px var(--tertiary-color)
+}
+
+/*hero*/
+.hero-img {
+    height: 55vh;
+    background-image: url("../images/wishyblows.JPG");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.hero-subtitle {
+    padding: 4px 11px;
+    color: black;
+    background-color: rgba(0, 0, 0, 68%);
+    border-radius: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    text-shadow: 0 0 10px var(--tertiary-color);
+    bottom: 0px;
 }
